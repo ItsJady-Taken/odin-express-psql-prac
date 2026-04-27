@@ -7,6 +7,7 @@
     "url": "https://github.com/ItsJady-Taken/odin-express-psql-prac/issues"
   },
   "repository": {
+    "build": "node app.js",
     "type": "git",
     "url": "git+https://github.com/ItsJady-Taken/odin-express-psql-prac.git"
   },
@@ -16,5 +17,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "serverless-http": "^4.0.0"
   }
 }
