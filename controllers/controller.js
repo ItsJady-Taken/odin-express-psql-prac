@@ -2,8 +2,9 @@ const db = require("../db/queries");
 
 async function getUsernames(req, res) {
   const usernames = await db.getAllUsernames();
- 
-  res.send("Usernames: " + usernames.map(user => user.username).join(", "));
+  console.log("Usernames: ", usernames);
+  // res.send("Usernames: " + usernames.map(user => user.username).join(", "));
+  res.render('index', { title: "Usernames", usernames });
 }
 
 async function createUsernameGet(req, res) {
